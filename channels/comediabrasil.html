@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Comédia Brasil</title>
+    <link rel="shortcut icon" href="../img/iconi-topo.png">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="start">
+            <a href="../comedia.html"><img width="48" height="48"
+                    src="https://img.icons8.com/pulsar-line/48/c29944/top-menu.png" alt="top-menu" /></a>
+        </div>
+    </header>
+
+
+    <!-- Create a video element -->
+    <div class="vid">
+        <h1>Comédia Brasil</h1>
+        <video id="video" controls></video>
+    </div>
+
+
+    <!-- Use hls.js to create a player and load the .m3u8 file -->
+    <script>
+        var video = document.getElementById('video');
+        if (Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource('https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-mvsphrecomedia-samsungbr/playlist.m3u8?ManoTV');
+            hls.attachMedia(video);
+            video.play();
+        }
+    </script>
+
+</body>
+
+</html>
