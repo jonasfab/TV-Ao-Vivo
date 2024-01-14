@@ -45,7 +45,7 @@ html {
 }
 
 .images-container .img p {
- padding: 4px;
+  padding: 4px;
 }
 
 .images-container img {
@@ -61,7 +61,7 @@ html {
 
 .images-container img:hover {
   transform: scale(1.1);
-  
+
 }
 
 .images-container p {
@@ -103,8 +103,8 @@ html {
   background-color: #202020;
   transition: all .5s ease;
   bottom: 1px;
-  overflow-y: auto ;
-  
+  overflow-y: auto;
+
 }
 
 .sidebar header {
@@ -176,7 +176,7 @@ label #cancel {
   text-align: center;
   line-height: 44px;
   transition: all .5s ease;
-top: 10px;
+  top: 10px;
 }
 
 label #cancel {
@@ -186,14 +186,14 @@ label #cancel {
 
 #check:checked~.sidebar {
   left: 0;
- 
+
 }
 
 #check:checked~label #btn {
   margin-left: 245px;
   opacity: 0;
   visibility: hidden;
- 
+
 }
 
 #check:checked~label #cancel {
@@ -214,6 +214,7 @@ label #cancel {
   .conteiner {
     margin-bottom: 20vh;
   }
+
   .conteiner .heading {
     font-size: 25px;
     margin-bottom: 20px;
@@ -241,5 +242,51 @@ label #cancel {
 
   }
 
+}
+
+/* Menssagem de avisos */
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  width: 280px;
+  z-index: 100;
+ 
+}
+
+/* Callout header */
+.callout-header {
+  padding: 15px 15px;
+  background: #555555;
+  font-size: 20px;
+  color: white;
 
 }
+
+/* Callout container/body */
+.callout-container {
+  padding: 20px;
+  background-color: #ccc;
+  color: black;
+  font-size: 18px;
+
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Change color on mouse-over */
+.closebtn:hover {
+  color: lightgrey;
+
+}
+
