@@ -262,7 +262,9 @@ label #cancel {
   background: #555555;
   font-size: 20px;
   color: white;
-
+  border-radius: 10px 10px 0px 0px;
+  animation-name: slidein;
+  animation-duration: 5s;
 }
 
 /* Callout container/body */
@@ -271,17 +273,33 @@ label #cancel {
   background-color: #ccc;
   color: black;
   font-size: 18px;
-
+  border-radius: 0px 0px 10px 10px;
+  animation-name: slidein;
+  animation-duration: 5s;
 }
 
 /* Close button */
 .closebtn {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 1px;
+  left: 255px;
   color: white;
   font-size: 30px;
   cursor: pointer;
+  animation-name: slidein;
+  animation-duration: 5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 /* Change color on mouse-over */
