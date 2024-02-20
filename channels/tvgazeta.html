@@ -28,19 +28,9 @@
     <!-- Create a video element -->
     <div class="vid">
         <h1>TV Gazeta</h1>
-        <video id="video" controls></video>
-    </div>
 
-    <!-- Use hls.js to create a player and load the .m3u8 file -->
-    <script>
-        var video = document.getElementById('video');
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource('https://5ad482a77183d.streamlock.net/financeirotvc21.com.br/financeirotvc21.com.br/playlist.m3u8');
-            hls.attachMedia(video);
-            video.play();
-        }
-    </script>
+        <iframe class="iframe" src="https://geo.dailymotion.com/player/xb2fp.html?video=x89qors" allow="encrypted-media" allowfullscreen="" frameborder="0" ></iframe>
+    </div>
 
 </body>
 
