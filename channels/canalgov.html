@@ -21,23 +21,13 @@
     </header>
 
 
+
     <!-- Create a video element -->
     <div class="vid">
         <h1>Canal gov</h1>
-        <video id="video" controls></video>
+
+        <iframe class="iframe" src="https://aovivo.ebc.com.br/embed-canalgov.html?autoplay=1" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
     </div>
-
-
-    <!-- Use hls.js to create a player and load the .m3u8 file -->
-    <script>
-        var video = document.getElementById('video');
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource('https://aovivo.ebc.com.br/8722b08d-0e21-444d-b2af-d5556fa45eae');
-            hls.attachMedia(video);
-            video.play();
-        }
-    </script>
 
 </body>
 
