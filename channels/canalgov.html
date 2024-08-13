@@ -23,7 +23,7 @@
 
     <!-- Create a video element -->
     <div class="vid">
-        <h1>Canal gov -</h1>
+        <h1>Canal gov</h1>
         <video id="video" controls></video>
     </div>
 
@@ -33,7 +33,7 @@
         var video = document.getElementById('video');
         if (Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource('blob:https://aovivo.ebc.com.br/8722b08d-0e21-444d-b2af-d5556fa45eae');
+            hls.loadSource('https://aovivo.ebc.com.br/8722b08d-0e21-444d-b2af-d5556fa45eae');
             hls.attachMedia(video);
             video.play();
         }
