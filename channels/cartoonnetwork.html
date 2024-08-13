@@ -19,24 +19,16 @@
         </div>
     </header>
 
+
+
+
     <!-- Create a video element -->
     <div class="vid">
         <h1>Cartoon Network</h1>
-        <video id="video" controls></video>
+
+        <iframe class="iframe" src="https://embedmax.site/tvl/cartoonnetwork.php" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
     </div>
-
-    <!-- Use hls.js to create a player and load the .m3u8 file -->
-    <script>
-        var video = document.getElementById('video');
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource('https://embedmax.site/tvl/cartoonnetwork.php');
-            hls.attachMedia(video);
-            video.play();
-        }
-    </script>
-
-
 </body>
 
 </html>
